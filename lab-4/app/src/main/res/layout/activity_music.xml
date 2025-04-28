@@ -1,0 +1,103 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvMusicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎵 Music Player"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Track Playing"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Stopped"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSelectMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎶 Select Music"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnPlayFromInternet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌐 Play from Internet"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnPauseMusic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏸️ Pause"
+                android:backgroundTint="#FFC107"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/btnPlayMusic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="▶️ Play"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_button"/>
+
+            <Button
+                android:id="@+id/btnStopMusic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏹️ Stop"
+                android:backgroundTint="#F44336"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
